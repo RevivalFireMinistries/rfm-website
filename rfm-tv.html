@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RFM-TV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/camera.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/skin-orange.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="html5gallery/jquery.js"></script>
+    <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/ico/favicon.png">
+</head>
+<body class="boxed">
+<div class="body">
+    <!-- Navigation -->
+    <div class="header">
+    </div>
+    <!-- /end header -->
+    <div class="container">
+
+        <div class="row">
+            <div class="hidden-xs" style="margin-left: 17px;">
+                <div style="display:none;" class="html5gallery" data-skin="darkness" data-width="915" data-height="600">
+
+
+                    <!-- Add Youtube video to Gallery -->
+                    <a href="https://www.youtube.com/watch?v=77Uh1O7upDI"><img src="http://img.youtube.com/vi/77Uh1O7upDI/1.jpg" alt="Youtube Video"></a>
+
+                    <!-- Add Youtube video to Gallery -->
+                    <a href="https://www.youtube.com/watch?v=ywGOMpVcKd0"><img src="http://img.youtube.com/vi/ywGOMpVcKd0/0.jpg" alt="Youtube Video"></a>
+
+                    <!-- Add Youtube video to Gallery -->
+                    <a href="https://www.youtube.com/watch?v=SOZ6tS2LGdc"><img src="http://img.youtube.com/vi/SOZ6tS2LGdc/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=YmtOnxHtQ4I"><img src="http://img.youtube.com/vi/YmtOnxHtQ4I/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=ImupwEx9yrU"><img src="http://img.youtube.com/vi/ImupwEx9yrU/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=ywGOMpVcKd0"><img src="http://img.youtube.com/vi/ywGOMpVcKd0/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=ljQ9FYNqU9Y"><img src="http://img.youtube.com/vi/ljQ9FYNqU9Y/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=4L-j9WY2Wh8"><img src="http://img.youtube.com/vi/4L-j9WY2Wh8/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=S-nThAlvyBo"><img src="http://img.youtube.com/vi/S-nThAlvyBo/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=1xP4mH_Hzwo"><img src="http://img.youtube.com/vi/1xP4mH_Hzwo/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=nHmd_3V8Kp0"><img src="http://img.youtube.com/vi/nHmd_3V8Kp0/1.jpg" alt="Youtube Video"></a>
+                    <a href="https://www.youtube.com/watch?v=06ogyGMVY0A"><img src="http://img.youtube.com/vi/06ogyGMVY0A/1.jpg" alt="Youtube Video"></a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center intro">
+            <div class="col-md-12">
+                <h1>Ministering <span class="primarycolor">with the next generation</span> in mind</h1>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- FOOTER BEGIN
+================================================== -->
+<div class="footerpage">
+
+</div> 
+    <!-- FOOTER END
+================================================== -->
+</div>
+<!-- /.body -->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/custom.js"></script>
+<!-- CALL CAMERA SLIDER -->
+<script>
+    jQuery(function(){
+        jQuery('#camera_wrap_4').camera({
+            height: 'auto',
+            loader: 'bar',
+            pagination: false,
+            thumbnails: false,
+            hover: true,
+            opacityOnGrid: false,
+            imagePath: 'img/'
+        });
+    });
+</script>
+
+<!-- CALL ACCORDION -->
+<script type="text/javascript">
+    $(".accordion h3").eq(0).addClass("active");
+    $(".accordion .accord_cont").eq(0).show();
+    $(".accordion h3").click(function(){
+        $(this).next(".accord_cont").slideToggle("slow")
+                .siblings(".accord_cont:visible").slideUp("slow");
+        $(this).toggleClass("active");
+        $(this).siblings("h3").removeClass("active");
+    });
+</script>
+<!-- Call opacity on hover images from recent news-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("img.imgOpa").hover(function() {
+                    $(this).stop().animate({opacity: "0.6"}, 'slow');
+                },
+                function() {
+                    $(this).stop().animate({opacity: "1.0"}, 'slow');
+                });
+    });
+</script>
+
+</body>
+</html>

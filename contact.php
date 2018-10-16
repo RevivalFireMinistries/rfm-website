@@ -20,12 +20,12 @@ if (!$comment) $errors[count($errors)] = 'Please enter your message.';
 if (!$errors) {
 
 	//recipient - replace your email here
-	$to = 'wowthemesnet@gmail.com';	
+	$to = 'russel@rfm.org.za';	
 	//sender - from the form
 	$from = $name . ' <' . $email . '>';
 	
 	//subject and the html message
-	$subject = 'Message via Biscaya HTML Template from ' . $name;	
+	$subject = 'Message via RFM Website ' . $name;	
 	$message = 'Name: ' . $name . '<br/><br/>
 		       Email: ' . $email . '<br/><br/>		
 		       Message: ' . nl2br($comment) . '<br/>';

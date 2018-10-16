@@ -1,5 +1,8 @@
 //////----TO TOP---////////
 jQuery(document).ready(function ($) {
+
+$('.header').load("header.html");
+$('.footerpage').load("footer.html");
 jQuery('.totop').click(function(){
 	jQuery('html, body').animate({ scrollTop: 0 }, "slow");
 });
@@ -68,7 +71,7 @@ jQuery(document).ready(function ($) {
 		
 		//organize the data
 		
-		var data = 'name=' + name.val() + '&email=' + email.val() + '&comment='  + encodeURIComponent(comment.val());
+		var data = 'name=' + name.val() + '&email=' + email.val() + '&message='  + encodeURIComponent(comment.val());
 
 		//disabled all the text fields
 		$('.text').attr('disabled','true');
@@ -79,10 +82,10 @@ jQuery(document).ready(function ($) {
 		//start the ajax
 		$.ajax({
 			//this is the php file that processes the data and sends email
-			url: "contact.php",	
+			url: "http://41.185.27.50:1985/webapi/guest",	
 			
 			//GET method is used
-			type: "GET",
+			type: "POST",
 
 			//pass the data			
 			data: data,		
